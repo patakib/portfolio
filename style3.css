@@ -25,7 +25,7 @@ body {
   padding-left: 0;
   width: 100%;
   color: white;
-  background-color: #2B2D42;
+  background-color: #354f52;
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -49,7 +49,7 @@ body {
 }
 
 .nav-list > li > a:hover {
-  color: #8D99AE;
+  color: #52796f;
 }
 
 #welcome-section {
@@ -79,18 +79,25 @@ section > p {
   text-align: center;
 }
 
+#help {
+  font-size: 2rem;
+}
+
 #services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  grid-gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
   height: 100vh;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-top: 15%;
+}
+
+.service-header {
+  padding-bottom: 3rem;
 }
 
 .service {
   text-align: center;
+  width: 20%;
 }
 
 .projects-header {
