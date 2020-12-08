@@ -86,7 +86,7 @@ section > p {
 #services {
   display: flex;
   justify-content: space-evenly;
-  height: 100vh;
+  height: 50vh;
   font-size: 1.8rem;
   padding-top: 15%;
 }
@@ -98,11 +98,13 @@ section > p {
 .service {
   text-align: center;
   width: 20%;
+  background-color: #cad2c5;
 }
 
 .projects-header {
   grid-area: header;
   font-size: 3rem;
+  text-align: center;
 }
  #project1 {
    grid-area: pr1;
@@ -122,24 +124,34 @@ section > p {
 
 .projects-section {
   display: grid;
-  grid-template-columns: repeat(25%, 4);
+  grid-template-columns: 40vh 40vh 40vh 40vh;
   grid-template-rows: auto;
   grid-template-areas:
   "header header header header"
   "pr1 pr2 pr3 pr4"
   "more more more more";
-  justify-items: center;
-  grid-gap: 10px;
+  justify-content: space-around;
+  grid-column-gap: 10vh;
+  align-content: stretch;
   height: 100vh;
   font-size: 1.5rem;
   padding-top: 15%;
 }
 
+.projects-section > div > h3 {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
 .projects-section > div > h3 > a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .projects-section > div > h3 > a:hover {
   text-decoration: underline;
+}
+
+.project {
+  background-color: #84a98c;
+  text-align: center;
 }
