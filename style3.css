@@ -60,10 +60,11 @@ body {
   width: 100%;
   height: 100vh;
   font-size: 1.5rem;
+  padding-bottom: 15%;
 }
 
 #title {
-  font-size: 2rem;
+  font-size: 4vh;
   padding: 2rem 2rem 0 2rem;
   margin-top: 10vh;
 }
@@ -80,24 +81,29 @@ section > p {
 }
 
 #help {
-  font-size: 2rem;
+  font-size: 5vh;
 }
 
 #services {
-  display: flex;
-  justify-content: space-evenly;
-  height: 50vh;
-  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  justify-content: center;
+  grid-column-gap: 10vw;
+  align-items: center;
+  font-size: 2.5vh;
   padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 .service-header {
-  padding-bottom: 3rem;
+  padding-bottom: 5vh;
+  font-size: 2vw;
 }
 
 .service {
   text-align: center;
-  width: 20%;
+  padding: 2vw 2vw 2vw 2vw;
+  height: 50vh;
   background-color: #cad2c5;
 }
 
@@ -115,27 +121,23 @@ section > p {
 #project3 {
   grid-area: pr3;
 }
-#project4 {
-  grid-area: pr4;
-}
+
 #more {
   grid-area: more;
 }
 
 .projects-section {
   display: grid;
-  grid-template-columns: 40vh 40vh 40vh 40vh;
-  grid-template-rows: auto;
+  grid-column-gap: 10vw;
+  align-items: center;
+  font-size: 2.5vh;
   grid-template-areas:
-  "header header header header"
-  "pr1 pr2 pr3 pr4"
-  "more more more more";
-  justify-content: space-around;
-  grid-column-gap: 10vh;
-  align-content: stretch;
+  ". header header header ."
+  " .pr1 pr2 pr3 ."
+  ". . more . .";
   height: 100vh;
-  font-size: 1.5rem;
-  padding-top: 15%;
+  margin-top: 0;
+  padding-bottom: 15%;
 }
 
 .projects-section > div > h3 {
@@ -154,4 +156,38 @@ section > p {
 .project {
   background-color: #84a98c;
   text-align: center;
+}
+
+#contact-header {
+  grid-area: contactheader;
+}
+#email {
+  grid-area: email;
+}
+#linkedin {
+  grid-area: linkedin;
+}
+#github {
+  grid-area: github;
+}
+
+#contact {
+  display: grid;
+  grid-column-gap: 10vw;
+  align-items: center;
+  font-size: 2.5vh;
+  grid-template-areas:
+  ". . . contactheader . . . "
+  ". . email linkedin github . ."
+  " . . . . . . .";
+  height: 100vh;
+  margin-top: 0;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-links > a > img {
+  width: 4vw;
 }
