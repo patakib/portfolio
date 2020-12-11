@@ -6,7 +6,7 @@ body:before {
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 400vh;
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(Social_Network_Analysis_Visualization.png);
     opacity: 0.1;
   }
@@ -17,13 +17,47 @@ body {
       font-size: 8px;
     }
 
+.lang {
+  display: flex;
+  top: 0;
+  margin-top: 0;
+  left: 0;
+  margin-left: 0;
+  padding-left: 0;
+  width: 20vw;
+  color: white;
+  background-color: #354f52;
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 1;
+}
+
+.lang > a {
+  padding-left: 2vw;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  margin: 0 2rem 0 2rem;
+}
+
+.lang > a:hover {
+  text-decoration: none;
+  color: white;
+}
+.lang > a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
 .nav-list {
   top: 0;
   margin-top: 0;
   left: 0;
   margin-left: 0;
   padding-left: 0;
-  width: 100%;
+  width: 100vw;
   color: white;
   background-color: #354f52;
   display: flex;
@@ -60,10 +94,11 @@ body {
   width: 100%;
   height: 100vh;
   font-size: 1.5rem;
-  padding-bottom: 15%;
+  padding-bottom: 0;
 }
 
 #title {
+  text-align: center;
   font-size: 4vh;
   padding: 2rem 2rem 0 2rem;
   margin-top: 10vh;
@@ -78,6 +113,7 @@ body {
 
 section > p {
   text-align: center;
+  font-weight: bold;
 }
 
 #help {
@@ -92,12 +128,12 @@ section > p {
   align-items: center;
   font-size: 2.5vh;
   padding-top: 15%;
-  padding-bottom: 15%;
+  padding-bottom: 10vh;
 }
 
 .service-header {
   padding-bottom: 5vh;
-  font-size: 2vw;
+  font-size: 3vh;
 }
 
 .service {
@@ -137,7 +173,7 @@ section > p {
   ". . more . .";
   height: 100vh;
   margin-top: 0;
-  padding-bottom: 15%;
+  padding-bottom: 0;
 }
 
 .projects-section > div > h3 {
@@ -189,5 +225,52 @@ section > p {
 }
 
 .contact-links > a > img {
-  width: 4vw;
+  height: 6vh;
+}
+
+
+
+@media (max-width: 1200px) {
+  .nav-list {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 4vh;
+    grid-row-gap: 1vh;
+    padding-bottom: 0;
+  }
+  .nav-list > li {
+    padding: 0 2vw 0 2vw;
+  }
+  #welcome-section {
+    padding-top: 30vh;
+    padding-bottom: 5vh;
+    height: 60vh;
+  }
+  #services {
+    display: grid;
+    grid-template-columns: 60vw;
+    grid-row-gap: 1vh;
+    padding-bottom: 0;
+    padding-top: 25vh;
+    height: 60vh;
+    font-size: 2.2vh;
+  }
+  .service {
+    height: 22vh;
+  }
+  .service-header {
+    padding-bottom: 1vh;
+  }
+  .projects-section {
+    grid-column-gap: 5vw;
+    height: 70vh;
+    grid-row-gap: 0;
+    padding-top: 20vh;
+  }
+  #contact {
+    grid-column-gap: 5vw;
+    height: 70vh;
+    grid-row-gap: 0;
+    padding-top: 20vh;
+  }
 }
