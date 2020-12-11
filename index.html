@@ -10,10 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="lang">
-      <a href="index.html">EN</a>
-      <a href="index_hu.html">HU</a>
-    </div>
     <nav id="navbar" class="nav">
       <ul class="nav-list">
         <li><a href="#welcome-section">About</a></li>
@@ -21,13 +17,14 @@
         <li><a href="#projects">Work</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="http://patbalint.pythonanywhere.com/blog/" target="_blank">Blog</a></li>
+        <li><a id="lang" href="index_hu.html"><img src="hungary.png" alt=""></a></li>
       </ul>
     </nav>
     <section id="welcome-section">
       <h1 id="title">Hi, my name is Balint Pataki</h1>
       <img id="photo" src="IMG_01.jpg" alt="">
-      <p>I am a cooperative software developer who can support your business growth.</p>
-        <p>I love programming, problem solving, sports and hiking.</p>
+      <p>I am an engineer-economist and a passionate developer.</p>
+        <p>I have experience among different industries and programming languages. I mostly concentrate on data-driven projects and web development.</p>
       <p id="help">How can I help?</p>
     </section>
     <section id="services">
@@ -46,16 +43,19 @@
     </section>
     <section id="projects" class="projects-section">
       <h2 class="projects-header">Here are some of my recent projects</h2>
-        <div id="project1" class="project">
+        <div id="project1" class="project-tile">
           <h3><a href="https://www.bpataki.com/docu.html" target="_blank">Django Tutorial Page</a></h3>
+          <img class="projectimg" src="docu_img.png" alt="">
         </div>
-        <div id="project2" class="project">
+        <div id="project2" class="project-tile">
           <h3><a href="https://www.bpataki.com/tribute.html" target="_blank">A Tribute to Aikido</a></h3>
+          <img class="projectimg" src="tribute_img.png" alt="">
         </div>
-        <div id="project3" class="project">
-          <h3><a href="https://nba-playoff-prediction-api.herokuapp.com/" target="_blank">Basketball Predictor App</a></h3>
+        <div id="project3" class="project-tile">
+          <h3><a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID_report_2020_05_04.pdf" target="_blank">COVID-19 analysis</a></h3>
+          <img class="projectimg" src="covid_img.png" alt="">
         </div>
-        <div id="more" class="project">
+        <div id="more" class="project-tile">
           <h3><a href="https://github.com/patakib" target="_blank">Show more...</a></h3>
         </div>
     </section>
@@ -68,7 +68,7 @@
         <a target="_blank" href="https://www.linkedin.com/in/b%C3%A1lint-pataki-044a8aa1/"><img src="linkedinlogo.png" alt=""></a>
       </div>
       <div class="contact-links" id="github">
-        <a target="_blank" href="https://github.com/patakib"><img src="githublogo.png" alt=""></a>
+        <a id="profile-link" target="_blank" href="https://github.com/patakib"><img src="githublogo.png" alt=""></a>
       </div>
     </section>
   </body>

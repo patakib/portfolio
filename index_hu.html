@@ -10,10 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="lang">
-      <a href="index.html">EN</a>
-      <a href="index_hu.html">HU</a>
-    </div>
     <nav id="navbar" class="nav">
       <ul class="nav-list">
         <li><a href="#welcome-section">Főoldal</a></li>
@@ -21,13 +17,14 @@
         <li><a href="#projects">Munkáim</a></li>
         <li><a href="#contact">Kapcsolat</a></li>
         <li><a href="http://patbalint.pythonanywhere.com/blog/" target="_blank">Blog</a></li>
+        <li><a id="lang" href="index.html"><img src="english.jpg" alt=""></a></li>
       </ul>
     </nav>
     <section id="welcome-section">
       <h1 id="title">Pataki Bálintnak hívnak, üdvözöllek az oldalamon</h1>
       <img id="photo" src="IMG_01.jpg" alt="">
-      <p>Együttműködő, több technológiában és iparágban tapasztalatot szerzett fejlesztő vagyok.</p>
-        <p>Hobbim és munkám a programozás, ezenkívül szeretek sportolni és túrázni.</p>
+      <p>Mérnök-közgazdász és szoftverfejlesztő vagyok.</p>
+        <p>Több iparágban és programozási nyelvben szereztem releváns tapasztalatot. Jellemzően az adattudomány, valamint a webfejlesztés területén dolgozom.</p>
       <p id="help">Hogyan tudok segíteni?</p>
     </section>
     <section id="services">
@@ -37,7 +34,7 @@
         </div>
         <div class="service" id="data">
           <h2 class="service-header">Adatelemzés</h2>
-          Ha többet szeretnél kihozni adataidból, tudok ebben segíteni különböző adattudományis és gépi tanuló algoritmusokkal.
+          Ha többet szeretnél kihozni adataidból, tudok ebben segíteni különböző adattudományi és gépi tanuló algoritmusokkal.
         </div>
         <div class="service" id="automation">
           <h2 class="service-header">Automatizáció</h2>
@@ -46,16 +43,19 @@
     </section>
     <section id="projects" class="projects-section">
       <h2 class="projects-header">Néhány korábbi projektem:</h2>
-        <div id="project1" class="project">
+        <div id="project1" class="project-tile">
           <h3><a href="https://www.bpataki.com/docu.html" target="_blank">Django bemutató oldal</a></h3>
+          <img class="projectimg" src="docu_img.png" alt="">
         </div>
-        <div id="project2" class="project">
+        <div id="project2" class="project-tile">
           <h3><a href="https://www.bpataki.com/tribute.html" target="_blank">Aikido weblap</a></h3>
+          <img class="projectimg" src="tribute_img.png" alt="">
         </div>
-        <div id="project3" class="project">
-          <h3><a href="https://nba-playoff-prediction-api.herokuapp.com/" target="_blank">Kosárlabda eredmény előrejelzés</a></h3>
+        <div id="project3" class="project-tile">
+          <h3><a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID_report_2020_05_04.pdf" target="_blank">COVID-19 adatelemzés</a></h3>
+          <img class="projectimg" src="covid_img.png" alt="">
         </div>
-        <div id="more" class="project">
+        <div id="more" class="project-tile">
           <h3><a href="https://github.com/patakib" target="_blank">Mutass többet...</a></h3>
         </div>
     </section>
@@ -68,7 +68,7 @@
         <a target="_blank" href="https://www.linkedin.com/in/b%C3%A1lint-pataki-044a8aa1/"><img src="linkedinlogo.png" alt=""></a>
       </div>
       <div class="contact-links" id="github">
-        <a target="_blank" href="https://github.com/patakib"><img src="githublogo.png" alt=""></a>
+        <a id="profile-link" target="_blank" href="https://github.com/patakib"><img src="githublogo.png" alt=""></a>
       </div>
     </section>
   </body>

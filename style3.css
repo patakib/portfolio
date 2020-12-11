@@ -17,39 +17,11 @@ body {
       font-size: 8px;
     }
 
-.lang {
-  display: flex;
-  top: 0;
-  margin-top: 0;
-  left: 0;
-  margin-left: 0;
-  padding-left: 0;
-  width: 20vw;
-  color: white;
-  background-color: #354f52;
-  display: flex;
-  justify-content: flex-start;
-  position: fixed;
-  z-index: 1;
-}
-
-.lang > a {
-  padding-left: 2vw;
-  font-size: 1rem;
-  text-align: center;
-  padding: 1rem 0 1rem 0;
-  margin: 0 2rem 0 2rem;
-}
-
-.lang > a:hover {
-  text-decoration: none;
-  color: white;
-}
-.lang > a:visited {
-  text-decoration: none;
-  color: white;
-}
-
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    }
 
 .nav-list {
   top: 0;
@@ -84,6 +56,10 @@ body {
 
 .nav-list > li > a:hover {
   color: #52796f;
+}
+
+#lang > img {
+  width: 2rem;
 }
 
 #welcome-section {
@@ -189,9 +165,13 @@ section > p {
   text-decoration: underline;
 }
 
-.project {
+.project-tile {
   background-color: #84a98c;
   text-align: center;
+}
+
+.projectimg {
+  width: 20vw;
 }
 
 #contact-header {
@@ -231,8 +211,16 @@ section > p {
 
 
 @media (max-width: 1200px) {
+  #navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+
   .nav-list {
     display: grid;
+    top: 0;
+    position: fixed;
     grid-template-columns: 100vw;
     grid-template-rows: 4vh;
     grid-row-gap: 1vh;
@@ -248,15 +236,15 @@ section > p {
   }
   #services {
     display: grid;
-    grid-template-columns: 60vw;
+    grid-template-columns: 70vw;
     grid-row-gap: 1vh;
     padding-bottom: 0;
-    padding-top: 25vh;
+    padding-top: 35vh;
     height: 60vh;
     font-size: 2.2vh;
   }
   .service {
-    height: 22vh;
+    height: 15vh;
   }
   .service-header {
     padding-bottom: 1vh;
@@ -265,12 +253,12 @@ section > p {
     grid-column-gap: 5vw;
     height: 70vh;
     grid-row-gap: 0;
-    padding-top: 20vh;
+    padding-top: 30vh;
   }
   #contact {
     grid-column-gap: 5vw;
     height: 70vh;
     grid-row-gap: 0;
-    padding-top: 20vh;
+    padding-top: 30vh;
   }
 }
