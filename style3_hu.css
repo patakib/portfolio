@@ -17,7 +17,7 @@ body:before {
   }
 
 body {
-      font-family: 'Abel', sans-serif;
+      font-family: sans-serif;
       color: black;
       font-size: 8px;
     }
@@ -253,13 +253,16 @@ svg {
 
 @media (max-width: 640px) {
   #welcome-section > div > p {
-    font-size: 1.7vh !important;
+    font-size: 1.6vh !important;
+  }
+  .service {
+    font-size: 1.6vh;
   }
 }
 
 @media (max-width: 780px) {
   #welcome-section > div > p {
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
 }
 
@@ -294,7 +297,7 @@ svg {
     height: 40vh;
   }
   #welcome-section > div > p {
-  font-size: 2.2vh;
+  font-size: 1.8vh;
   }
   #title {
     font-size: 3.5vh;
