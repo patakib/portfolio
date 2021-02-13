@@ -103,7 +103,7 @@ body {
 
 section > div > p {
   text-align: center;
-  font-size: 3vh;
+  font-size: 2.8vh;
   padding: 2vh 3vw 1vh 3vw;
 }
 
@@ -127,7 +127,7 @@ svg {
 }
 
 .service-header {
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
   font-size: 3vh;
 }
 
@@ -261,17 +261,27 @@ svg {
   #welcome-section > div > p {
     font-size: 1.7vh !important;
   }
+  .service-header {
+    padding-top: 1vh;
+  }
 }
 
 @media (max-width: 780px) {
   #welcome-section > div > p {
     font-size: 2vh;
   }
+  .service-header {
+    padding-top: 1vh;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1430px) {
   .projects-header {
     padding-top: 8vh;
+  }
+  .service-header {
+    padding-top: 1vh;
   }
 }
 
@@ -318,6 +328,7 @@ svg {
     height: 17vh;
   }
   .service-header {
+    padding-top: 1vh;
     padding-bottom: 1vh;
   }
   .projects-section {
