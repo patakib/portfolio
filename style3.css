@@ -17,77 +17,44 @@ body:before {
   }
 
 body {
-      font-family: 'Abel', sans-serif;
+      font-family: 'Abel', sans-serif !important;
       color: black;
       font-size: 8px;
     }
 
-#navbar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    }
-
-.nav-list {
-  top: 0;
-  margin-top: 0;
-  left: 0;
-  margin-left: 0;
-  padding-left: 0;
-  width: 100vw;
-  color: white;
-  background-color: #354f52;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-}
-
-.nav-list > li {
-  display: block;
-  text-align: center;
-  font-size: 2rem;
+.navbar {
+  background-color: #354f52 !important;
+  padding: 0em 1em !important;
+  font-size: 1.8em;
   font-weight: bold;
-  padding: 1rem 0 1rem 0;
-  margin: 0 2rem 0 2rem;
-  text-decoration: none;
 }
-
-.nav-list > li > a {
-  text-decoration: none;
-  color: white;
-  height: 100%;
-  width: 100%;
+.nav-link {
+  color: white !important;
+  margin: 0em 1em !important;
 }
-
-.nav-list > li > a:hover {
-  color: #52796f;
+.nav-item:hover {
+  background-color: #52796f !important;
 }
-
 #lang > img {
-  width: 2rem;
+  width: 1.4em;
 }
-
 #welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100vh;
-  font-size: 1.5rem;
   padding-bottom: 0;
 }
 
-.welcome {
+#welcome {
   background-color: #eaede8;
-  width: 80vw;
-  height: 80vh;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 #title {
+  font-size: 1.75em !important;
   text-align: center;
   font-size: 4vh;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1em 2em 0 2em;
   margin-top: 10vh;
 }
 
@@ -95,127 +62,52 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 7vw;
+  max-width: 4em;
   height: auto;
   border-radius: 50%;
   margin-bottom: 0;
 }
 
-section > div > p {
-  text-align: center;
-  font-size: 2.8vh;
-  padding: 2vh 3vw 1vh 3vw;
-}
-
 #icons {
   text-align: center;
+  padding-bottom: 4em;
 }
 
-svg {
-  padding: 1vh 0vw 2vh 1vw;
-}
-
-#services {
-  display: grid;
-  grid-template-columns: 20vw 20vw 20vw;
-  justify-content: center;
-  grid-column-gap: 10vw;
-  align-items: center;
-  font-size: 2.5vh;
-  padding-top: 15%;
+#experience {
+  padding-top: 8em;
   padding-bottom: 10vh;
-}
-
-.service-header {
-  padding-bottom: 2vh;
-  font-size: 3vh;
-}
-
-.service {
-  text-align: center;
-  padding: 2vw 2vw 2vw 2vw;
-  height: 50vh;
-  /*background-color: #cad2c5;*/
   background-color: #354f52;
-  color: #eaede8;
+  color:white;
+  width: 100%;
+  height: 100vh;
 }
-
-.projects-header {
-  font-size: 5vh;
+#exp {
   text-align: center;
-  padding-bottom: 1vh;
-  padding-top: 4vh;
-  margin-bottom: 0;
-  margin-top: 2vh,
+  font-size: 1.5em;
 }
- #project1 {
-   grid-area: pr1;
- }
-#project2 {
-  grid-area: pr2;
-}
-#project3 {
-  grid-area: pr3;
-}
-#project4 {
-  grid-area: pr4;
-}
-#project5 {
-  grid-area: pr5;
-}
-#project6 {
-  grid-area: pr6;
+.exp-header {
+  font-size: 1.75em;
+  padding-top: 2rem;
 }
 
-#more {
-  grid-area: more;
-}
 
-.projects-section {
-  display: grid;
-  grid-column-gap: 5vw;
-  grid-row-gap: 2vh;
-  align-items: center;
-  grid-template-areas:
-  " . pr1 pr2 pr3 ."
-  " . pr4 pr5 pr6 .";
-  margin-top: 0;
-  padding-top: 5vh;
-  padding-bottom: 0;
+#projects {
+  padding-top: 8em;
+  padding-bottom: 10vh;
+  width: 100%;
+  height: 100vh;
 }
-
-.projects-section > div {
-  border-style: solid;
-  border-color: #354f52;
-  height: 35vh;
-}
-
-.projects-section > div > h3 {
-  margin: 1rem 1rem 1rem 1rem;
-  color: #354f52;
-  /* color: #eaede8; */
-  padding-top: 0.5vh;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  font-size: 3vh;
-}
-
-.project-tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 2vw 0 2vw;
-  width: 20vw;
-}
-
-.project-tile > h3 {
+#pr {
   text-align: center;
+  font-size: 1.2em;
 }
-
-.project-tile > p {
-  font-size: 2.3vh !important;
+#pr > div > div {
+  padding: 0 5px 0 5px;
 }
-
+#pr > div > div > div {
+  background-color: #52796f;
+  color: white;
+}
 .links {
   text-align: center;
 }
@@ -254,105 +146,18 @@ svg {
   text-decoration: underline;
 }
 
-
-
-
-@media (max-width: 640px) {
-  #welcome-section > div > p {
-    font-size: 1.7vh !important;
-  }
-  .service-header {
-    padding-top: 1vh;
-  }
+@media screen and (min-width: 993px) {
+  body{font-size: 14px;}
 }
-
-@media (max-width: 780px) {
-  #welcome-section > div > p {
-    font-size: 2vh;
-  }
-  .service-header {
-    padding-top: 1vh;
-    margin-top: 0;
-  }
+@media screen and (min-width: 769px) and (max-width: 992px){
+    body{font-size: 13px;}
+    #experience {padding-top: 1.75em;}
 }
-
-@media (max-width: 1430px) {
-  .projects-header {
-    padding-top: 8vh;
-  }
-  .service-header {
-    padding-top: 1vh;
-  }
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    body{font-size: 12px;}
+    #experience {padding-top: 1.75em;}
 }
-
-@media (max-width: 1200px) {
-  #navbar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
-
-  .nav-list {
-    display: grid;
-    top: 0;
-    position: fixed;
-    grid-template-columns: 100vw;
-    grid-template-rows: 4vh;
-    grid-row-gap: 1vh;
-    padding-bottom: 0;
-  }
-  .nav-list > li {
-    padding: 0 2vw 0 2vw;
-  }
-  #welcome-section {
-    padding-top: 40vh;
-    padding-bottom: 5vh;
-    height: 40vh;
-  }
-  #welcome-section > div > p {
-  font-size: 2.2vh;
-  }
-  #title {
-    font-size: 3.5vh;
-  }
-  #services {
-    display: grid;
-    grid-template-columns: 70vw;
-    grid-row-gap: 1vh;
-    padding-bottom: 4vh;
-    padding-top: 30vh;
-    height: 65vh;
-    font-size: 2vh;
-  }
-  .service {
-    height: 17vh;
-  }
-  .service-header {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-  }
-  .projects-section {
-    display: grid;
-    grid-template-areas:
-    "pr1"
-    "pr2"
-    "pr3"
-    "pr4"
-    "pr5"
-    "pr6";
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 70vw;
-    grid-row-gap: 1vh;
-    padding-bottom: 0;
-    padding-right: 0;
-  }
-.projects-header {
-  padding-top: 25vh;
-}
-
-  .project-tile {
-    height: 10vh;
-    width: 70vw;
-  }
+@media screen and (max-width: 576px) {
+    body{font-size: 11px;}
+    #experience {padding-top: 1.75em;}
 }

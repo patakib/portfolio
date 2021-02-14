@@ -3,121 +3,161 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link rel="stylesheet" href="style2.css"> -->
-    <link rel="stylesheet" href="style3.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <!-- friconix -->
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <link rel="stylesheet" href="style3.css">
   </head>
   <body>
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#services">Experience</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="http://patbalint.pythonanywhere.com/blog/" target="_blank">Blog</a></li>
-        <li><a id="lang" href="index_hu.html"><img src="hungary.png" alt=""></a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fi-xnsuxl-three-bars-solid" style="color: white; font-size:2rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://patbalint.pythonanywhere.com/blog/" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="lang" href="index_hu.html"><img src="hungary.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="welcome-section">
-      <div class="welcome">
-        <h1 id="title">Hi, my name is Balint Pataki</h1>
-        <img id="photo" src="IMG_01.jpg" alt="">
-        <p>I am an engineer-economist and developer from Hungary, who has experience amongst different industries.<br>
-          I worked 5 years as data analyst in international forestry research projects, then I have been working in US procurement as a process lead analyst.
-          I transitioned into programming on the job to help the actual company as I always concentrated on problem solving and higher efficiency.<br>
-          My expertise is data science, visualization and process automation, however I like developing web applications as well.
-          If I can connect them together, it is even better.<br>
-          I always try to learn something new and never consider my knowledge as a finished article.
-          Sharing is equally important for me, this is the way a team can develop - I always find some time to help junior colleagues.
-        </p>
-        <!-- <p>I am an engineer-economist and software developer with experience among different industries and leadership positions.<br>This knowledge helps me to understand business problems deeply and to choose the best tool to solve them with programming. <br>I mostly concentrate on data-driven projects and web development.</p> -->
-        <div id="icons">
-          <a target="_blank" rel="noopener noreferrer" href="mailto:pataki.balint@gmx.com"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 900 163C 934 163 962 191 962 225C 962 225 962 305 962 305C 962 305 579 569 579 569C 545 592 521 600 500 600C 479 600 455 592 421 569C 421 569 38 305 38 305C 38 305 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 379 631C 379 631 379 631 379 631C 420 658 459 675 500 675C 541 675 580 658 621 631C 621 631 621 631 621 631C 621 631 962 396 962 396C 962 396 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 396 38 396C 38 396 379 631 379 631"/></svg></a>
-          <a target="_blank" href="https://www.linkedin.com/in/b%C3%A1lint-pataki-044a8aa1/"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 100 0C 45 0 0 45 0 100C 0 100 0 900 0 900C 0 955 45 1000 100 1000C 100 1000 900 1000 900 1000C 955 1000 1000 955 1000 900C 1000 900 1000 100 1000 100C 1000 45 955 0 900 0C 900 0 100 0 100 0C 100 0 100 0 100 0M 100 75C 100 75 900 75 900 75C 914 75 925 86 925 100C 925 100 925 900 925 900C 925 914 914 925 900 925C 900 925 100 925 100 925C 86 925 75 914 75 900C 75 900 75 100 75 100C 75 86 86 75 100 75C 100 75 100 75 100 75M 336 332C 336 332 336 789 336 789C 336 789 211 789 211 789C 211 789 211 332 211 332C 211 332 336 332 336 332M 346 206C 346 206 346 206 346 206C 346 247 313 280 273 280C 233 280 201 247 201 206C 201 166 233 133 273 133C 313 133 346 166 346 206M 834 508C 834 508 834 789 834 789C 834 789 709 789 709 789C 709 789 709 556 709 556C 709 416 543 427 543 556C 543 556 543 789 543 789C 543 789 419 789 419 789C 419 789 419 332 419 332C 419 332 543 332 543 332C 543 332 543 406 543 406C 601 298 834 290 834 508"/></svg></a>
-          <a id="profile-link" target="_blank" href="https://github.com/patakib"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 500 0C 500 0 500 0 500 0C 776 0 1000 224 1000 500C 1000 720 857 908 659 974C 634 979 625 963 625 950C 625 933 626 879 626 813C 626 766 610 736 592 720C 703 708 820 665 820 473C 820 418 801 374 769 339C 774 327 791 275 764 207C 764 207 722 193 626 258C 586 247 544 241 501 241C 459 241 416 247 376 258C 281 194 239 207 239 207C 211 275 229 327 234 339C 202 374 183 419 183 473C 183 665 299 708 410 720C 396 733 383 755 378 787C 349 800 278 821 233 746C 223 731 195 694 156 695C 114 695 139 718 156 728C 178 740 202 784 208 798C 218 826 250 880 376 857C 376 899 376 938 376 950C 376 963 367 978 342 974C 143 908 0 721 0 500C 0 224 224 0 500 0"/></svg></a>
+      <div class="container" id="welcome">
+        <div class="row">
+          <div class="col-sm">
+            <h1 id="title">Hi, my name is Balint Pataki</h1>
+            <img id="photo" src="IMG_01.jpg" alt="">
+            <p>I am an engineer-economist and developer from Hungary, who has experience amongst different industries.<br>
+              I worked 5 years as data analyst in international forestry research projects, then I have been working in US procurement as a process lead analyst.
+              I transitioned into programming on the job to help the actual company as I always concentrated on problem solving and higher efficiency.<br>
+              My expertise is data science, visualization and process automation, however I like developing web applications as well.
+              If I can connect them together, it is even better.<br>
+              I always try to learn something new and never consider my knowledge as a finished article.
+              Sharing is equally important for me, this is the way a team can develop - I always find some time to help junior colleagues.</p>
+              <div id="icons">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:pataki.balint@gmx.com"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 900 163C 934 163 962 191 962 225C 962 225 962 305 962 305C 962 305 579 569 579 569C 545 592 521 600 500 600C 479 600 455 592 421 569C 421 569 38 305 38 305C 38 305 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 379 631C 379 631 379 631 379 631C 420 658 459 675 500 675C 541 675 580 658 621 631C 621 631 621 631 621 631C 621 631 962 396 962 396C 962 396 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 396 38 396C 38 396 379 631 379 631"/></svg></a>
+                <a target="_blank" href="https://www.linkedin.com/in/b%C3%A1lint-pataki-044a8aa1/"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 100 0C 45 0 0 45 0 100C 0 100 0 900 0 900C 0 955 45 1000 100 1000C 100 1000 900 1000 900 1000C 955 1000 1000 955 1000 900C 1000 900 1000 100 1000 100C 1000 45 955 0 900 0C 900 0 100 0 100 0C 100 0 100 0 100 0M 100 75C 100 75 900 75 900 75C 914 75 925 86 925 100C 925 100 925 900 925 900C 925 914 914 925 900 925C 900 925 100 925 100 925C 86 925 75 914 75 900C 75 900 75 100 75 100C 75 86 86 75 100 75C 100 75 100 75 100 75M 336 332C 336 332 336 789 336 789C 336 789 211 789 211 789C 211 789 211 332 211 332C 211 332 336 332 336 332M 346 206C 346 206 346 206 346 206C 346 247 313 280 273 280C 233 280 201 247 201 206C 201 166 233 133 273 133C 313 133 346 166 346 206M 834 508C 834 508 834 789 834 789C 834 789 709 789 709 789C 709 789 709 556 709 556C 709 416 543 427 543 556C 543 556 543 789 543 789C 543 789 419 789 419 789C 419 789 419 332 419 332C 419 332 543 332 543 332C 543 332 543 406 543 406C 601 298 834 290 834 508"/></svg></a>
+                <a id="profile-link" target="_blank" href="https://github.com/patakib"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 500 0C 500 0 500 0 500 0C 776 0 1000 224 1000 500C 1000 720 857 908 659 974C 634 979 625 963 625 950C 625 933 626 879 626 813C 626 766 610 736 592 720C 703 708 820 665 820 473C 820 418 801 374 769 339C 774 327 791 275 764 207C 764 207 722 193 626 258C 586 247 544 241 501 241C 459 241 416 247 376 258C 281 194 239 207 239 207C 211 275 229 327 234 339C 202 374 183 419 183 473C 183 665 299 708 410 720C 396 733 383 755 378 787C 349 800 278 821 233 746C 223 731 195 694 156 695C 114 695 139 718 156 728C 178 740 202 784 208 798C 218 826 250 880 376 857C 376 899 376 938 376 950C 376 963 367 978 342 974C 143 908 0 721 0 500C 0 224 224 0 500 0"/></svg></a>
+              </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
-    <section id="services">
-        <div class="service" id="data">
-          <h2 class="service-header">Data Science</h2>
-          Technologies:<br> Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Sklearn, Tensorflow, Keras), SQL, PowerBI, data lakes<br>
-          Methodologies:<br> EDA, web scraping, supervised learning, unsupervised learning, deep learning
+    <section id="experience">
+      <div class="container" id="exp">
+        <div class="row">
+          <div class="col-lg my-auto">
+            <h2 class="exp-header">Data Science</h2>
+            Technologies:<br> Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Sklearn, Tensorflow, Keras), SQL, PowerBI, data lakes<br>
+            Methodologies:<br> EDA, web scraping, supervised learning, unsupervised learning, deep learning
+          </div>
+          <div class="col-lg my-auto">
+            <h2 class="exp-header">Automation</h2>
+            VBA, Power Query, Power Automate, RPA<br>
+            Proven track record of small-to large-scale projects in procurement business segment
+          </div>
+          <div class="col-lg my-auto">
+            <h2 class="exp-header">Web Development</h2>
+            Front-end:<br> HTML, CSS, Bootstrap, JavaScript, React<br>
+            Back-end:<br> Python (Django)
+          </div>
         </div>
-        <div class="service" id="automation">
-          <h2 class="service-header">Automation</h2>
-          VBA, Power Query, Power Automate, RPA<br>
-          Proven track record of small-to large-scale projects in procurement business segment
-        </div>
-        <div class="service" id="web">
-          <h2 class="service-header">Web Development</h2>
-          Front-end:<br> HTML, CSS, Bootstrap, JavaScript, React<br>
-          Back-end:<br> Python (Django)
-        </div>
+      </div>
     </section>
     <section id="projects">
-      <h2 class="projects-header">Here are some of my recent public projects</h2>
-      <div class="projects-section">
-        <div id="project1" class="project-tile">
-          <h3>Forest Cover Prediction</h3>
-          <p>This is a machine learning project. The aim is to predict the ideal tree species on a certain site based on its environmental and climatic conditions.<br>
-          Technology: Python (Sklearn, Pandas, Numpy, Matplotlib)</p>
-          <div class="links">
-            <a href="https://github.com/patakib/forest-cover-analysis" target="_blank">Project Site</a>
-            <a href="https://www.kaggle.com/blintpataki/forest-cover" target="_blank">Code</a>
-          </div>
-        </div>
-        <div id="project2" class="project-tile">
-          <h3>Covid-19 Analysis</h3>
-          <p>A data visualization and exploratory data analysis project with clustering. <br>
-          Technology: Python (Pandas, Numpy, Matplotlib, Sklearn)</p>
-          <div class="links">
-            <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID_report_2020_05_04.pdf" target="_blank">Project Site</a>
-            <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID%20(1).ipynb" target="_blank">Code</a>
-          </div>
-        </div>
-        <div id="project3" class="project-tile">
-          <h3>Sport Prediction</h3>
-          <p>A machine learning project with API. The aim of this program is to give you a prediction on playoff participation (yes or no) based on the regular season's first 10 matches.<br>
-            Technology: Python (Pandas, Numpy, Sklearn, Flask), HTML, CSS.</p>
-            <div class="links">
-              <a href="https://nba-playoff-prediction-api.herokuapp.com/" target="_blank">Project Site</a>
-              <a href="https://github.com/patakib/Basketball-Playoff-Prediction-Flask-app" target="_blank">Code</a>
+      <div class="container" id="pr">
+        <div class="row">
+          <div class="col-lg my-auto">
+            <div class="inner">
+              <h3>Forest Cover Prediction</h3>
+              <p>This is a machine learning project. The aim is to predict the ideal tree species on a certain site based on its environmental and climatic conditions.<br>
+              Technology: Python (Sklearn, Pandas, Numpy, Matplotlib)</p>
+              <div class="links">
+                <a href="https://github.com/patakib/forest-cover-analysis" target="_blank">Project Site</a>
+                <a href="https://www.kaggle.com/blintpataki/forest-cover" target="_blank">Code</a>
+              </div>
             </div>
-        </div>
-        <div id="project4" class="project-tile">
-          <h3>Item Tracker</h3>
-          <p>A full stack project. You can track transactional data in this app -  create, delete and update items.
-            The data is stored in a relational database, the layout is dynamic, you can filter and order by columns.<br>
-          Technology: Python (Django), HTML, CSS, JavaScript</p>
-          <div class="links">
-            <a href="https://order-management-tracker.herokuapp.com/" target="_blank">Project Site</a>
-            <a href="https://github.com/patakib/item-tracker" target="_blank">Code</a>
           </div>
-        </div>
-        <div id="project5" class="project-tile">
-          <h3>Text Summarizer</h3>
-          <p>An application which is able to summarize articles.
-            It basically assign weights to words and sentences, then take the sentences out from the article that have a biggest influence.<br>
-          Technology: Python - Django, NLTK</p>
-          <div class="links">
-            <a href="http://www.textsummary-app.hu/" target="_blank">Project Site</a>
-            <a href="https://github.com/patakib/Text-Summary" target="_blank">Code</a>
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Covid-19 Analysis</h3>
+            <p>A data visualization and exploratory data analysis project with clustering. <br>
+            Technology: Python (Pandas, Numpy, Matplotlib, Sklearn)</p>
+            <div class="links">
+              <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID_report_2020_05_04.pdf" target="_blank">Project Site</a>
+              <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID%20(1).ipynb" target="_blank">Code</a>
+            </div>
           </div>
-        </div>
-        <div id="project6" class="project-tile">
-          <h3>Technical Documentation Page</h3>
-          <p>This is a tutorial I wrote for Django framework.<br>
-          Technology: HTML, CSS</p>
-          <div class="links">
-            <a href="https://www.bpataki.com/docu.html" target="_blank">Project Site</a>
-            <a href="https://github.com/patakib/technical-documentation-page" target="_blank">Code</a>
+          </div>
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Sport Prediction</h3>
+            <p>A machine learning project with API. The aim of this program is to give you a prediction on playoff participation (yes or no) based on the regular season's first 10 matches.<br>
+              Technology: Python (Pandas, Numpy, Sklearn, Flask), HTML, CSS.</p>
+              <div class="links">
+                <a href="https://nba-playoff-prediction-api.herokuapp.com/" target="_blank">Project Site</a>
+                <a href="https://github.com/patakib/Basketball-Playoff-Prediction-Flask-app" target="_blank">Code</a>
+            </div>
           </div>
         </div>
         </div>
+        <div class="row">
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Item Tracker</h3>
+            <p>A full stack project. You can track transactional data in this app -  create, delete and update items.
+              The data is stored in a relational database, the layout is dynamic, you can filter and order by columns.<br>
+            Technology: Python (Django), HTML, CSS, JavaScript</p>
+            <div class="links">
+              <a href="https://order-management-tracker.herokuapp.com/" target="_blank">Project Site</a>
+              <a href="https://github.com/patakib/item-tracker" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Text Summarizer</h3>
+            <p>An application which is able to summarize articles.
+              It basically assign weights to words and sentences, then take the sentences out from the article that have a biggest influence.<br>
+            Technology: Python - Django, NLTK</p>
+            <div class="links">
+              <a href="http://www.textsummary-app.hu/" target="_blank">Project Site</a>
+              <a href="https://github.com/patakib/Text-Summary" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Technical Documentation Page</h3>
+            <p>This is a tutorial I wrote for Django framework.<br>
+            Technology: HTML, CSS</p>
+            <div class="links">
+              <a href="https://www.bpataki.com/docu.html" target="_blank">Project Site</a>
+              <a href="https://github.com/patakib/technical-documentation-page" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
     <div class="friconix">
       <a target="_blank" href="https://friconix.com">Icons by Friconix</a>
