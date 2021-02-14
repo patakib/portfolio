@@ -42,6 +42,7 @@ body {
   width: 100%;
   height: 100vh;
   padding-bottom: 0;
+  padding-top: 8em;
 }
 
 #welcome {
@@ -85,6 +86,10 @@ body {
   text-align: center;
   font-size: 1.5em;
 }
+#skills {
+  font-size: 2em;
+  padding-bottom: 2em;
+}
 .exp-header {
   font-size: 1.75em;
   padding-top: 2rem;
@@ -97,25 +102,44 @@ body {
   width: 100%;
   height: 100vh;
 }
+#projects-header {
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 1em;
+}
 #pr {
   text-align: center;
   font-size: 1.2em;
+}
+.inner {
+  margin-left: 2em;
+  margin-bottom: 2em;
+  height: 16em;
+  border: 5px solid #354f52;
+  background-color: #eaede8;
+}
+.inner > h3 {
+  background-color: #354f52;
+  color: white;
 }
 #pr > div > div {
   padding: 0 5px 0 5px;
 }
 #pr > div > div > div {
-  background-color: #52796f;
-  color: white;
+  color: black;
 }
 .links {
-  text-align: center;
+  background-color: #354f52;
+  position: absolute;
+  bottom: 2.2em;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .links > a {
   text-decoration: none;
   font-weight: bold;
-  color: #354f52;
+  color: white;
   padding-right: 1vw;
   padding-left: 1vw;
 }
@@ -130,34 +154,44 @@ body {
   font-size: 2vh;
 }
 
-.friconix {
+#friconix {
   float: right;
   font-size: 2vh;
   bottom: 0;
 }
 
-.friconix > a {
+#friconix > a {
   text-decoration: none;
   color: black;
 }
 
-.friconix > a:hover {
+#friconix > a:hover {
   color: black;
   text-decoration: underline;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1201px) {
+  body{font-size: 16px;}
+  #experience {padding-top: 10em;}
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   body{font-size: 14px;}
+  #experience {padding-top: 8em;}
+  .inner > h3 {font-size: 1.5em;}
+  #projects {padding-bottom: 0;}
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
     body{font-size: 13px;}
     #experience {padding-top: 1.75em;}
+    .links {width: 93%;}
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
     body{font-size: 12px;}
-    #experience {padding-top: 1.75em;}
+    #experience {padding-top: 5em;}
+    .links {width: 91%;}
 }
 @media screen and (max-width: 576px) {
     body{font-size: 11px;}
     #experience {padding-top: 1.75em;}
+    .links {width: 91%;}
 }
