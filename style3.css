@@ -202,8 +202,8 @@ body {
 }
 @media screen and (min-width: 250px) and (max-width: 375px) {
     body{font-size: 9px;}
-    #experience {padding-top: 1.75em;}
+    #experience {padding-top: 1.75em;height:120%;}
     .links {width: 91%;}
-    #welcome-section {padding-top: 2em;padding-bottom:4em;}
+    #welcome-section {height:110%;padding-top: 4em;padding-bottom:2em;}
     #title {margin-top: 0em;}
 }
