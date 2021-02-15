@@ -3,122 +3,172 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link rel="stylesheet" href="style2.css"> -->
-    <link rel="stylesheet" href="style3_hu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <!-- friconix -->
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <link rel="stylesheet" href="style_hu.css">
   </head>
   <body>
-    <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li><a href="#welcome-section">Főoldal</a></li>
-        <li><a href="#services">Tapasztalat</a></li>
-        <li><a href="#projects">Munkáim</a></li>
-        <li><a href="http://patbalint.pythonanywhere.com/blog/" target="_blank">Blog</a></li>
-        <li><a id="lang" href="index.html"><img src="english.jpg" alt=""></a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fi-xnsuxl-three-bars-solid" style="color: white; font-size:2rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome-section">Rólam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Tapasztalat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projektek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://patbalint.pythonanywhere.com/blog/" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="lang" href="index.html"><img src="english.jpg" alt=""></a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="welcome-section">
-      <div class="welcome">
-        <h1 id="title">Pataki Bálintnak hívnak, üdvözöllek az oldalamon</h1>
-        <img id="photo" src="IMG_01.jpg" alt="">
-        <p>Mérnök-közgazdász és fejlesztő vagyok, több iparágban szereztem tapasztalatot.<br>
-          5 éven keresztül adatelemzőként dolgoztam nemzetközi erdészeti kutatóprojektekben, az utóbbi években pedig USA területén történő beszerzések folyamatfejlesztésével és elemzésével foglalkoztam.
-          Munkám során folyamatosan váltam programozóvá, mivel a felmerülő problémákat proaktívan, minél automatizáltabban szeretem megoldani.<br>
-          Tapasztalatom főként adattudományi, adatvizualizációs és automatizációs területen van, de ezenkívül szeretek webes alkalmazásokat is fejleszteni.<br>
-          Folyamatosan igyekszem új dolgokat elsajátítani, nyitott vagyok az új technológiákra, sosem gondolom azt, hogy már eleget tudok és hátradőlhetek.
-          Fontosnak tartom a tudásmegosztást, úgy gondolom, hogy ez egy cég eredményességét növeli - mindig találok időt arra, hogy a junior kollégákat segítsem.</p>
-        <!-- <p>I am an engineer-economist and software developer with experience among different industries and leadership positions.<br>This knowledge helps me to understand business problems deeply and to choose the best tool to solve them with programming. <br>I mostly concentrate on data-driven projects and web development.</p> -->
-        <div id="icons">
-          <a target="_blank" rel="noopener noreferrer" href="mailto:pataki.balint@gmx.com"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 900 163C 934 163 962 191 962 225C 962 225 962 305 962 305C 962 305 579 569 579 569C 545 592 521 600 500 600C 479 600 455 592 421 569C 421 569 38 305 38 305C 38 305 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 379 631C 379 631 379 631 379 631C 420 658 459 675 500 675C 541 675 580 658 621 631C 621 631 621 631 621 631C 621 631 962 396 962 396C 962 396 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 396 38 396C 38 396 379 631 379 631"/></svg></a>
-          <a target="_blank" href="https://www.linkedin.com/in/b%C3%A1lint-pataki-044a8aa1/"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 100 0C 45 0 0 45 0 100C 0 100 0 900 0 900C 0 955 45 1000 100 1000C 100 1000 900 1000 900 1000C 955 1000 1000 955 1000 900C 1000 900 1000 100 1000 100C 1000 45 955 0 900 0C 900 0 100 0 100 0C 100 0 100 0 100 0M 100 75C 100 75 900 75 900 75C 914 75 925 86 925 100C 925 100 925 900 925 900C 925 914 914 925 900 925C 900 925 100 925 100 925C 86 925 75 914 75 900C 75 900 75 100 75 100C 75 86 86 75 100 75C 100 75 100 75 100 75M 336 332C 336 332 336 789 336 789C 336 789 211 789 211 789C 211 789 211 332 211 332C 211 332 336 332 336 332M 346 206C 346 206 346 206 346 206C 346 247 313 280 273 280C 233 280 201 247 201 206C 201 166 233 133 273 133C 313 133 346 166 346 206M 834 508C 834 508 834 789 834 789C 834 789 709 789 709 789C 709 789 709 556 709 556C 709 416 543 427 543 556C 543 556 543 789 543 789C 543 789 419 789 419 789C 419 789 419 332 419 332C 419 332 543 332 543 332C 543 332 543 406 543 406C 601 298 834 290 834 508"/></svg></a>
-          <a id="profile-link" target="_blank" href="https://github.com/patakib"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 500 0C 500 0 500 0 500 0C 776 0 1000 224 1000 500C 1000 720 857 908 659 974C 634 979 625 963 625 950C 625 933 626 879 626 813C 626 766 610 736 592 720C 703 708 820 665 820 473C 820 418 801 374 769 339C 774 327 791 275 764 207C 764 207 722 193 626 258C 586 247 544 241 501 241C 459 241 416 247 376 258C 281 194 239 207 239 207C 211 275 229 327 234 339C 202 374 183 419 183 473C 183 665 299 708 410 720C 396 733 383 755 378 787C 349 800 278 821 233 746C 223 731 195 694 156 695C 114 695 139 718 156 728C 178 740 202 784 208 798C 218 826 250 880 376 857C 376 899 376 938 376 950C 376 963 367 978 342 974C 143 908 0 721 0 500C 0 224 224 0 500 0"/></svg></a>
+      <div class="container" id="welcome">
+        <div class="row">
+          <div class="col-sm">
+            <h1 id="title">Pataki Bálintnak hívnak, üdvözöllek az oldalamon</h1>
+            <img id="photo" src="IMG_01.jpg" alt="">
+            <p>Mérnök-közgazdász és fejlesztő vagyok, több iparágban szereztem tapasztalatot.<br>
+              5 éven keresztül adatelemzőként dolgoztam nemzetközi erdészeti kutatóprojektekben, az utóbbi években pedig USA területén történő beszerzések folyamatfejlesztésével és elemzésével foglalkoztam.
+              Munkám során folyamatosan váltam programozóvá, mivel a felmerülő problémákat proaktívan, minél automatizáltabban szeretem megoldani.<br>
+              Tapasztalatom főként adattudományi, adatvizualizációs és automatizációs területen van, de ezenkívül szeretek webes alkalmazásokat is fejleszteni.<br>
+              Folyamatosan igyekszem új dolgokat elsajátítani, nyitott vagyok az új technológiákra, sosem gondolom azt, hogy már eleget tudok és hátradőlhetek.
+              Fontosnak tartom a tudásmegosztást, úgy gondolom, hogy ez egy cég eredményességét növeli - mindig találok időt arra, hogy a junior kollégákat segítsem.</p>
+              <div id="icons">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:pataki.balint@gmx.com"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 900 163C 934 163 962 191 962 225C 962 225 962 305 962 305C 962 305 579 569 579 569C 545 592 521 600 500 600C 479 600 455 592 421 569C 421 569 38 305 38 305C 38 305 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 379 631C 379 631 379 631 379 631C 420 658 459 675 500 675C 541 675 580 658 621 631C 621 631 621 631 621 631C 621 631 962 396 962 396C 962 396 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 396 38 396C 38 396 379 631 379 631"/></svg></a>
+                <a target="_blank" href="https://www.linkedin.com/in/b%C3%A1lint-pataki-044a8aa1/"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 100 0C 45 0 0 45 0 100C 0 100 0 900 0 900C 0 955 45 1000 100 1000C 100 1000 900 1000 900 1000C 955 1000 1000 955 1000 900C 1000 900 1000 100 1000 100C 1000 45 955 0 900 0C 900 0 100 0 100 0C 100 0 100 0 100 0M 100 75C 100 75 900 75 900 75C 914 75 925 86 925 100C 925 100 925 900 925 900C 925 914 914 925 900 925C 900 925 100 925 100 925C 86 925 75 914 75 900C 75 900 75 100 75 100C 75 86 86 75 100 75C 100 75 100 75 100 75M 336 332C 336 332 336 789 336 789C 336 789 211 789 211 789C 211 789 211 332 211 332C 211 332 336 332 336 332M 346 206C 346 206 346 206 346 206C 346 247 313 280 273 280C 233 280 201 247 201 206C 201 166 233 133 273 133C 313 133 346 166 346 206M 834 508C 834 508 834 789 834 789C 834 789 709 789 709 789C 709 789 709 556 709 556C 709 416 543 427 543 556C 543 556 543 789 543 789C 543 789 419 789 419 789C 419 789 419 332 419 332C 419 332 543 332 543 332C 543 332 543 406 543 406C 601 298 834 290 834 508"/></svg></a>
+                <a id="profile-link" target="_blank" href="https://github.com/patakib"><svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 500 0C 500 0 500 0 500 0C 776 0 1000 224 1000 500C 1000 720 857 908 659 974C 634 979 625 963 625 950C 625 933 626 879 626 813C 626 766 610 736 592 720C 703 708 820 665 820 473C 820 418 801 374 769 339C 774 327 791 275 764 207C 764 207 722 193 626 258C 586 247 544 241 501 241C 459 241 416 247 376 258C 281 194 239 207 239 207C 211 275 229 327 234 339C 202 374 183 419 183 473C 183 665 299 708 410 720C 396 733 383 755 378 787C 349 800 278 821 233 746C 223 731 195 694 156 695C 114 695 139 718 156 728C 178 740 202 784 208 798C 218 826 250 880 376 857C 376 899 376 938 376 950C 376 963 367 978 342 974C 143 908 0 721 0 500C 0 224 224 0 500 0"/></svg></a>
+              </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
-    <section id="services">
-      <div class="service" id="data">
-        <h2 class="service-header">Adattudomány</h2>
-        Technológiák:<br> Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Sklearn, Tensorflow, Keras), SQL, PowerBI, data lakes<br>
-        Módszerek:<br> EDA, web scraping, supervised learning, unsupervised learning, deep learning
+    <section id="experience">
+      <div class="container" id="exp">
+        <div class="row">
+          <div class="col-lg my-auto">
+            <h1 id="skills">Szakmai tapasztalat</h1>
+          </div>
       </div>
-      <div class="service" id="automation">
-        <h2 class="service-header">Automatizáció</h2>
-        VBA, Power Query, Power Automate, RPA<br>
-        Széleskörű tapasztalat automatizációs projektekben
-      </div>
-        <div class="service" id="web">
-          <h2 class="service-header">Webfejlesztés</h2>
-          Front-end:<br> HTML, CSS, Bootstrap, JavaScript, React<br>
-          Back-end:<br> Python (Django)
+        <div class="row">
+          <div class="col-lg my-auto">
+            <h2 class="exp-header">Adattudomány</h2>
+            Technológiák:<br> Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Sklearn, Tensorflow, Keras), SQL, PowerBI, data lakes<br>
+            Módszerek:<br> EDA, web scraping, supervised learning, unsupervised learning, deep learning
+          </div>
+          <div class="col-lg my-auto">
+            <h2 class="exp-header">Autmatizáció</h2>
+            VBA, Power Query, Power Automate, RPA<br>
+            Különböző nagyságrendű projektek vezetése
+          </div>
+          <div class="col-lg my-auto">
+            <h2 class="exp-header">Webfejlesztés</h2>
+            Front-end:<br> HTML, CSS, Bootstrap, JavaScript, React<br>
+            Back-end:<br> Python (Django)
+          </div>
         </div>
+      </div>
     </section>
     <section id="projects">
-      <h2 class="projects-header">Publikus projektjeim:</h2>
-      <div class="projects-section">
-        <div id="project1" class="project-tile">
-          <h3>Erdészeti Tervező</h3>
-          <p>Ez egy gépi tanulással készült projekt. Az algoritmus elemzi az adatbázist, majd egy javaslatot ad az ideális fafaj kiválasztására az adott területre vonatkozóan a termőhelyi paraméterek függvényében.<br>
-          Technológia: Python (Sklearn, Pandas, Numpy, Matplotlib)</p>
-          <div class="links">
-            <a href="https://github.com/patakib/forest-cover-analysis" target="_blank">Projektoldal</a>
-            <a href="https://www.kaggle.com/blintpataki/forest-cover" target="_blank">Kód</a>
-          </div>
-        </div>
-        <div id="project2" class="project-tile">
-          <h3>Covid-19 Elemzés</h3>
-          <p>Adatvizualizáció és statisztikai elemzés, valamint klaszterekbe sorolás.<br>
-          Technológia: Python (Pandas, Numpy, Matplotlib, Sklearn)</p>
-          <div class="links">
-            <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID_report_2020_05_04.pdf" target="_blank">Projektoldal</a>
-            <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID%20(1).ipynb" target="_blank">Kód</a>
-          </div>
-        </div>
-        <div id="project3" class="project-tile">
-          <h3>Sporteredmény Előrejelzés</h3>
-          <p>Gépi tanulással készült projekt. Az alkalmazás előrejelzi az alapszakasz első tíz mérkőzésének adatai alapján, hogy az adott csapat bejut-e a rájátszásba, vagy nem.</p>
-            Technológia: Python (Pandas, Numpy, Sklearn, Flask), HTML, CSS.</p>
-            <div class="links">
-              <a href="https://nba-playoff-prediction-api.herokuapp.com/" target="_blank">Projektoldal</a>
-              <a href="https://github.com/patakib/Basketball-Playoff-Prediction-Flask-app" target="_blank">Kód</a>
+      <h1 id="projects-header">Néhány publikus projektem</h1>
+      <div class="container" id="pr">
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="inner">
+              <h3>Erdészeti Tervező</h3>
+              <p>Ez egy gépi tanulással készült projekt. Az algoritmus elemzi az adatbázist, majd egy javaslatot ad az ideális fafaj kiválasztására az adott területre vonatkozóan a termőhelyi paraméterek függvényében.<br>
+              Technológia: Python (Sklearn, Pandas, Numpy, Matplotlib)</p>
+              <div class="links">
+                <a href="https://github.com/patakib/forest-cover-analysis" target="_blank">Projektoldal</a>
+                <a href="https://www.kaggle.com/blintpataki/forest-cover" target="_blank">Kód</a>
+              </div>
             </div>
-        </div>
-        <div id="project4" class="project-tile">
-          <h3>Tranzakciórögzítő Tábla</h3>
-          <p>Ez egy full-stack projekt. Egy relációs adatbázis adatait jeleníti meg táblázatos formában, amely szűrhető, sorbarendezhető oszlopok szerint.
-            Tetszés szerint hozzáadhatók, törölhetők, módosíthatók a tételek.<br>
-          Technológia: Python (Django), HTML, CSS, JavaScript</p>
-          <div class="links">
-            <a href="https://order-management-tracker.herokuapp.com/" target="_blank">Projektoldal</a>
-            <a href="https://github.com/patakib/item-tracker" target="_blank">Kód</a>
           </div>
-        </div>
-        <div id="project5" class="project-tile">
-          <h3>Szöveg Összefoglaló</h3>
-          <p>Egy alkalmazás, amely összefoglalja egy cikk lényegét néhány mondatban.
-              Mondatok és szavak súlyozásán alapszik, majd ezekből a legrelevánsabb mondatok kiválogatásával készíti el a rövid összefoglalót.<br>
-          Technológia: Python - Django, NLTK</p>
-          <div class="links">
-            <a href="http://www.textsummary-app.hu/" target="_blank">Projektoldal</a>
-            <a href="https://github.com/patakib/Text-Summary" target="_blank">Kód</a>
+          <div class="col-lg-4 my-auto">
+            <div class="inner">
+            <h3>Covid-19 Elemzés</h3>
+            <p>Adatvizualizáció és statisztikai elemzés, valamint klaszterekbe sorolás.<br>
+            Technológia: Python (Pandas, Numpy, Matplotlib, Sklearn)</p>
+            <div class="links">
+              <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID_report_2020_05_04.pdf" target="_blank">Projektoldal</a>
+              <a href="https://github.com/patakib/COVID-19/blob/master/USA-COVID%20(1).ipynb" target="_blank">Kód</a>
+            </div>
           </div>
-        </div>
-        <div id="project6" class="project-tile">
-          <h3>Django Tutorial</h3>
-          <p>A Django webes keretrendszerről szóló ismertető kóddal, példákkal.<br>
-            Technológia: HTML, CSS</p>
-          <div class="links">
-            <a href="https://www.bpataki.com/docu.html" target="_blank">Projektoldal</a>
-            <a href="https://github.com/patakib/technical-documentation-page" target="_blank">Kód</a>
+          </div>
+          <div class="col-lg-4 colmy-auto">
+            <div class="inner">
+            <h3>Sporteredmény Előrejelzés</h3>
+            <p>Gépi tanulással készült projekt. Az alkalmazás előrejelzi az alapszakasz első tíz mérkőzésének adatai alapján, hogy az adott csapat bejut-e a rájátszásba, vagy nem.
+              Technológia: Python (Pandas, Numpy, Sklearn, Flask), HTML, CSS.</p>
+              <div class="links">
+                <a href="https://nba-playoff-prediction-api.herokuapp.com/" target="_blank">Projektoldal</a>
+                <a href="https://github.com/patakib/Basketball-Playoff-Prediction-Flask-app" target="_blank">Kód</a>
+            </div>
           </div>
         </div>
         </div>
+        <div class="row">
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Tranzakciórögzítő Tábla</h3>
+            <p>Ez egy full-stack projekt. Egy relációs adatbázis adatait jeleníti meg táblázatos formában, amely szűrhető, sorbarendezhető oszlopok szerint.
+              Tetszés szerint hozzáadhatók, törölhetők, módosíthatók a tételek.<br>
+            Technológia: Python (Django), HTML, CSS, JavaScript</p>
+            <div class="links">
+              <a href="https://order-management-tracker.herokuapp.com/" target="_blank">Projektoldal</a>
+              <a href="https://github.com/patakib/item-tracker" target="_blank">Kód</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Szöveg Összefoglaló</h3>
+            <p>Egy alkalmazás, amely összefoglalja egy cikk lényegét néhány mondatban.
+                Mondatok és szavak súlyozásán alapszik, majd ezekből a legrelevánsabb mondatok kiválogatásával készíti el a rövid összefoglalót.<br>
+            Technológia: Python - Django, NLTK</p>
+            <div class="links">
+              <a href="http://www.textsummary-app.hu/" target="_blank">Projektoldal</a>
+              <a href="https://github.com/patakib/Text-Summary" target="_blank">Kód</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg my-auto">
+            <div class="inner">
+            <h3>Django Tutorial</h3>
+            <p>A Django webes keretrendszerről szóló ismertető kóddal, példákkal.<br>
+              Technológia: HTML, CSS</p>
+            <div class="links">
+              <a href="https://www.bpataki.com/docu.html" target="_blank">Projektoldal</a>
+              <a href="https://github.com/patakib/technical-documentation-page" target="_blank">Kód</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="friconix">
+          <a target="_blank" href="https://friconix.com">Icons by Friconix</a>
+        </div>
+      </div>
+      </div>
     </section>
-    <div class="friconix">
-      <a target="_blank" href="https://friconix.com">Icons by Friconix</a>
-    </div>
   </body>
 </html>
