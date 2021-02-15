@@ -195,7 +195,7 @@ body {
 }
 @media screen and (min-width: 376px) and (max-width: 576px) {
     body{font-size: 11px;}
-    #experience {padding-top: 4.5em;}
+    #experience {padding-top: 4em;padding-bottom:1em;}
     #skills{padding-bottom:0.5em;}
     .links {width: 91%;}
     #welcome-section{padding-top:4em;}
