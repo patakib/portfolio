@@ -44,7 +44,7 @@ body {
   width: 100%;
   padding-bottom: 0;
   padding-top: 8vh;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 #welcome {
@@ -81,7 +81,7 @@ body {
   background-color: #354f52;
   color:white;
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 #exp {
   text-align: center;
@@ -101,7 +101,7 @@ body {
   padding-top: 8em;
   padding-bottom: 10vh;
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 #projects-header {
   font-size: 5vw;
